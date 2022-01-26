@@ -1,0 +1,206 @@
+.register-form-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-form-container .register-form {
+  font-weight: bold;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-form-container .register-form input {
+  padding: 10px 5px;
+  margin-bottom: 1.5em;
+}
+
+.register-form-container .register-form .title {
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.register-form-container .register-form button {
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 1.5em;
+  background-color: #f2cd46;
+  border: none;
+}
+
+.register-form-container .register-form button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .register-form-container .register-form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 787px) {
+  .register-form-container .register-form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 698px) {
+  .register-form-container .register-form {
+    width: 100%;
+  }
+}
+
+.signin-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 600px;
+  background-color: #d3d6d0;
+}
+
+.signin-container .signin {
+  padding: 2.5em;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  width: 60%;
+}
+
+.signin-container .signin .buttons-menu {
+  text-align: center;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid #d3d6d0;
+}
+
+.signin-container .signin .buttons-menu p {
+  padding: 2em;
+}
+
+.signin-container .signin .buttons-menu .conditions {
+  font-size: 10px;
+}
+
+.signin-container .signin .buttons-menu .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: bold;
+  font-size: 15px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.signin-container .signin .buttons-menu .btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.signin-container .signin .buttons-menu .btn-content {
+  white-space: nowrap;
+  padding: 0px 10px;
+}
+
+.signin-container .signin .buttons-menu .btn.sign-in {
+  background-color: white;
+  border: 1px solid #d3d6d0;
+  margin-top: 1em;
+}
+
+.signin-container .signin .buttons-menu .btn.sign-in i {
+  margin-right: 1em;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.signin-container .signin .buttons-menu .btn.create-account {
+  color: black;
+  border: none;
+  outline: none;
+  background-color: #f2cd46;
+}
+
+.signin-container .signin .overview {
+  width: 50%;
+  margin-left: 2em;
+}
+
+.signin-container .signin .overview .title {
+  margin-bottom: 1em;
+}
+
+.signin-container .signin .overview .text p {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 1400px) {
+  .signin-container .signin .buttons-menu .btn {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1230px) {
+  .signin-container .signin .buttons-menu .btn {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .signin-container .signin .overview {
+    display: none;
+  }
+  .signin-container .signin .buttons-menu {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .signin-container .signin {
+    width: 100%;
+  }
+  .signin-container .signin .buttons-menu .btn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

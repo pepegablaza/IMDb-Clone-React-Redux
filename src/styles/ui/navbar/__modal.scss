@@ -1,0 +1,127 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  background-color: #1c1c1c;
+  left: 0;
+  right: 0;
+  height: 100%;
+  animation: loadModal 0.4s linear;
+  .modal-content {
+    height: 100%;
+    width: 55%;
+  }
+  .nav {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding: 2.5em 0;
+
+    .logo,
+    .close {
+      color: black;
+      background-color: #f2cd46;
+    }
+    .logo {
+      border-radius: 8px;
+      font-size: 2em;
+      font-weight: 900;
+      padding: 1px 10px;
+    }
+    .close {
+      height: 50px;
+      width: 50px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        transform: scale(1.5);
+      }
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+  .menu {
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    .item {
+      justify-content: space-between;
+      display: flex;
+      padding: 0 0.5em;
+      .icon {
+        i {
+          transform: scale(1.6);
+        }
+        width: 10%;
+      }
+      .data {
+        width: 85%;
+        p {
+          color: white;
+          margin-top: 1em;
+        }
+        p:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+@keyframes loadModal {
+  from {
+    top: -40%;
+    height: 0;
+  }
+  to {
+    top: 0;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .modal .menu .item .icon {
+    margin-right: 1em;
+  }
+}
+@media (max-width: 1223px) {
+  .modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    left: 0;
+    right: 0;
+    height: 100%;
+    align-items: flex-start;
+    .nav {
+      padding: 1em;
+    }
+    .modal-content {
+      background-color: #212121;
+      width: 290px;
+    }
+    .menu {
+      display: flex;
+      flex-direction: column;
+      .item {
+        padding: 1em 1.5em;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .modal .modal-content {
+    width: 100%;
+  }
+}

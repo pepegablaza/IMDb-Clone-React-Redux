@@ -1,0 +1,12 @@
+const authActionTypes = {
+  REGISTER_FORM: "REGISTER_FORM",
+  SIGNIN_FORM: "SIGNIN_FORM",
+  SET_NAME: "SET_NAME",
+  SET_EMAIL: "SET_EMAIL",
+  SET_PASSWORD: "SET_PASSWORD",
+
+  AUTH_SUCCESS: "AUTH_SUCCESS",
+  AUTH_FAILED: "AUTH_FAILED",
+};
+
+export default authActionTypes;

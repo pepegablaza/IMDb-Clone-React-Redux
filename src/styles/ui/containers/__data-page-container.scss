@@ -1,0 +1,31 @@
+.data-page-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #cfcfcf;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 1400px) {
+  .data-page-container .content {
+    width: 65%;
+  }
+}
+@media (max-width: 1024px) {
+  .data-page-container .content {
+    width: 85%;
+  }
+}
+@media (max-width: 824px) {
+  .data-page-container .content {
+    width: 100%;
+  }
+}

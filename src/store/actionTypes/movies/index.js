@@ -1,0 +1,10 @@
+const moviesActionTypes = {
+  COMING_SOON: "COMING_SOON",
+  TOP_RATED: "TOP_RATED",
+  MOST_POPULAR: "MOST_POPULAR",
+
+  NEXT_COMING_SOON: "NEXT_COMING_SOON",
+  PREV_COMING_SOON: "PREV_COMING_SOON",
+};
+
+export default moviesActionTypes;

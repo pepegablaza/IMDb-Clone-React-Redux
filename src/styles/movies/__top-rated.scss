@@ -1,0 +1,190 @@
+.top-rated-movies-container {
+  width: 100%;
+  color: #424242;
+
+  .imdb-overview {
+    padding: 1em;
+    font-size: 13px;
+    ul {
+      padding: 1em;
+    }
+    h4 {
+      font-weight: normal;
+    }
+    p {
+      color: #136cb2;
+    }
+  }
+
+  .load-more-button {
+    margin-top: 1em;
+    color: #136cb2;
+    text-align: right;
+  }
+  .load-more-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .titles {
+    margin-bottom: 20px;
+
+    h4 {
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 11px;
+    }
+  }
+  .top-rated-movies-table {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      .rank-title {
+        width: 55%;
+      }
+      .rating,
+      .add-watchlist,
+      .your-rating {
+        text-align: center;
+        width: 15%;
+        word-wrap: break-word;
+      }
+    }
+    .top-rated-movie {
+      height: 80px;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      justify-content: flex-start;
+      .img-container {
+        width: 60px;
+        height: 80px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        img {
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+        }
+      }
+      .data-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .header {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          justify-content: space-between;
+          height: 100%;
+          margin-bottom: 0;
+          p {
+            margin-left: 1em;
+            width: 8%;
+          }
+          .title {
+            font-weight: normal;
+            color: #136cb2;
+            font-size: 14px;
+            margin-left: 10px;
+            width: 90%;
+          }
+          .title:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+        .body {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          height: 100%;
+
+          i {
+            transform: scale(1.8);
+          }
+
+          .your-rating,
+          .add-watchlist {
+            width: 32.5%;
+            text-align: center;
+          }
+          .rating {
+            width: 35%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            white-space: nowrap;
+            font-weight: bold;
+
+            i {
+              color: #f2cd46;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 465px) {
+  .top-rated-movies-container
+    .top-rated-movies-table
+    .top-rated-movie
+    .data-container {
+    .rating,
+    .your-rating,
+    .add-watchlist {
+      i {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+@media (max-width: 465px) {
+  .top-rated-movies-container .top-rated-movies-table .header {
+    font-size: 15px;
+  }
+}
+@media (max-width: 362px) {
+  .top-rated-movies-container .top-rated-movies-table .header {
+    font-size: 13px;
+  }
+}
+@media (max-width: 331px) {
+  .top-rated-movies-container
+    .top-rated-movies-table
+    .top-rated-movie
+    .data-container
+    .body {
+    .add-watchlist {
+      i {
+        transform: scale(1);
+      }
+    }
+
+    .rating {
+      flex-direction: column;
+      align-content: center;
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}

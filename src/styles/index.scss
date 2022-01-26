@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+@import "./auth/index.scss";
+@import "./homepage/index.scss";
+@import "./movies/index.scss";
+@import "./ui/containers/index.scss";
+@import "./ui/footer/index.scss";
+@import "./ui/navbar/index.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #000000;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(74, 74, 74, 0.3);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #d7d9db;
+  }
+  a {
+    text-decoration: none;
+  }
+}

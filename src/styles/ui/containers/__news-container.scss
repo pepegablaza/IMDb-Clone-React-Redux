@@ -1,0 +1,26 @@
+.news-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  height: 550px;
+  color: white;
+  justify-content: space-between;
+}
+
+@media (max-width: 1550px) {
+  .news-container {
+    width: 80%;
+  }
+}
+@media (max-width: 1300px) {
+  .news-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1028px) {
+  .news-container {
+    width: 100%;
+  }
+}

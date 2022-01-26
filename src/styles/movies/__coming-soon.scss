@@ -1,0 +1,179 @@
+.coming-soon-container {
+  width: 100%;
+  height: 100%;
+  color: #424242;
+  .titles {
+    margin-bottom: 20px;
+
+    h3 {
+      margin-bottom: 1em;
+    }
+    p {
+      font-size: 11px;
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #136cb2;
+    margin-top: 1em;
+
+    span:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .movies-container {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .coming-soon-movie {
+      border-bottom: 1px dotted #666666;
+      padding: 0.7em;
+      display: flex;
+      justify-content: space-between;
+      background-color: #f7f7f7;
+      width: 100%;
+      height: 25%;
+      img {
+        width: 25%;
+        display: block;
+        height: 100%;
+      }
+      .description {
+        border: 1px solid pink;
+        display: flex;
+        align-content: space-between;
+        flex-direction: column;
+        width: 70%;
+
+        .title {
+          height: 10%;
+          font-size: 25px;
+          color: #136cb2;
+        }
+        .overview {
+          height: 70%;
+          font-size: 13px;
+          margin-top: 2em;
+          color: #666666;
+        }
+
+        .person-data-container {
+          margin-top: 1em;
+          color: #136cb2;
+          .person-data {
+            display: flex;
+            flex-direction: column;
+            h4 {
+              color: #424242;
+            }
+            p {
+              padding: 5px;
+              font-size: 15px;
+            }
+          }
+        }
+
+        .action-buttons {
+          height: 15%;
+          display: flex;
+          width: 40%;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            border-radius: 3px;
+            padding: 5px 10px;
+            height: fit-content;
+            font-size: 11px;
+            background-repeat: repeat-x;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #e0e0e0 #c0c0c0 #c0c0c0 #e0e0e0;
+            background-color: #ece2c6;
+          }
+          button:hover {
+            border: 2px solid#e3b719;
+            background-color: #e3cd7d;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .imdb-overview-text {
+      padding: 2em 1em;
+      font-size: 11px;
+      text-align: left;
+      color: #666666;
+    }
+  }
+}
+@media (max-width: 1520px) {
+  .coming-soon-container
+    .movies-container
+    .coming-soon-movie
+    .description
+    .action-buttons {
+    width: 70%;
+  }
+}
+@media (max-width: 1200px) {
+  .coming-soon-container
+    .movies-container
+    .coming-soon-movie
+    .description
+    .title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 619px) {
+  .coming-soon-movie .description {
+    .overview {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .coming-soon-container .movies-container .coming-soon-movie {
+    .description {
+      .person-data-container .person-data {
+        h4 {
+          font-size: 12px;
+        }
+        p {
+          white-space: nowrap;
+          font-size: 10px;
+        }
+      }
+
+      .title {
+        font-size: 15px;
+      }
+      .action-buttons {
+        margin-top: 2em;
+        flex-direction: column;
+        height: 50%;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .coming-soon-container
+    .movies-container
+    .coming-soon-movie
+    .description
+    .action-buttons {
+    flex-direction: column;
+    height: 60%;
+    align-items: flex-start;
+  }
+}

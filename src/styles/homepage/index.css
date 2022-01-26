@@ -1,0 +1,399 @@
+.discovers {
+  position: relative;
+  width: 65%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discovers .cursor {
+  padding: 30px 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.discovers .cursor i {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.discovers .cursor:hover {
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  color: #f5d938;
+  cursor: pointer;
+}
+
+.discovers .discover {
+  background-size: cover;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.discovers .discover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.discovers .discover .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  padding: 1em;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(black));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), black);
+}
+
+.discovers .discover .description .title {
+  font-size: 4em;
+}
+
+.discovers .discover .description .overview {
+  font-size: 1.2em;
+}
+
+@media (max-width: 1024px) {
+  .discovers {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .discovers .discover .description .overview {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .discovers .discover .description .overview {
+    display: none;
+  }
+}
+
+.features {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.features .title {
+  height: 20%;
+  color: #f5d938;
+  margin-bottom: 1em;
+}
+
+.features .features-data {
+  position: relative;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 55%;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.features .features-data .cursors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2;
+}
+
+.features .features-data .cursors .left,
+.features .features-data .cursors .right {
+  padding: 25px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.features .features-data .cursors .left i,
+.features .features-data .cursors .right i {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.features .features-data .cursors .left:hover,
+.features .features-data .cursors .right:hover {
+  color: #f5d938;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.features .features-data .feature {
+  height: 100%;
+  width: 16.5%;
+}
+
+.features .features-data .feature img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1168px) {
+  .features {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .features {
+    width: 100%;
+  }
+}
+
+@media (max-width: 820px) {
+  .features {
+    width: 800px;
+  }
+  .features .features-data .cursors {
+    width: 95vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.people {
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+
+.people .title {
+  color: #f5d938;
+  margin-bottom: 1em;
+}
+
+.people .people-data {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.people .people-data .cursors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2;
+}
+
+.people .people-data .cursors .left,
+.people .people-data .cursors .right {
+  padding: 25px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.people .people-data .cursors .left i,
+.people .people-data .cursors .right i {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.people .people-data .cursors .left:hover,
+.people .people-data .cursors .right:hover {
+  color: #f5d938;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.people .people-data .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 85%;
+  width: 16.6%;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.people .people-data .person .img-container {
+  overflow: hidden;
+  width: 100%;
+  height: 80%;
+}
+
+.people .people-data .person .img-container img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.people .people-data .person .name {
+  padding: 1em;
+  color: white;
+  height: 20%;
+  white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .people .people-data .cursors {
+    width: 95vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 1028px) {
+  .people {
+    width: 1200px;
+  }
+}
+
+.trendings {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(74, 74, 74, 0.3)));
+  background-image: linear-gradient(to top, black, rgba(74, 74, 74, 0.3));
+  width: 33%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.trendings .trending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30%;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.trendings .trending img {
+  display: block;
+  width: 120px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trendings .trending .overview {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1em;
+}
+
+.trendings .trending .overview .rating {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.trendings .trending .overview .rating i {
+  margin-left: 10px;
+  color: #f5d938;
+}
+
+.trendings .trending .overview .votes-count {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .trendings {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */
